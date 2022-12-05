@@ -6,6 +6,6 @@ int main()
     int *ptrX, *ptrY;
     ptrX = &x;
     ptrY = &y;
-    printf("%d %d ", x, y);
     printf("%d %d ", *ptrX, *ptrY);
+    return 0;
 }

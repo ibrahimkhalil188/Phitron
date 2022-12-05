@@ -7,12 +7,10 @@ int get_odd_even_sum(int n, int array[])
         if (i % 2 == 0 && array[i] % 2 == 0)
         {
             sum += (i + array[i]);
-            printf("even= %d %d \n", i, array[i]);
         }
         else if (i % 2 != 0 && array[i] % 2 != 0)
         {
             sum += (i + array[i]);
-            printf("Odd= %d %d \n", i, array[i]);
         }
     }
     return sum;
@@ -27,4 +25,5 @@ int main()
         scanf("%d", &array[i]);
     }
     printf("%d", get_odd_even_sum(n, array));
+    return 0;
 }

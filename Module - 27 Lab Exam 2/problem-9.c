@@ -44,6 +44,6 @@ int main()
         scanf("%d", &array[i]);
     }
     printf("%d\n", get_prime(n, array));
-    printf("%d\n", get_even_average(n, array));
+    printf("%d", get_even_average(n, array));
     return 0;
 }

@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int main()
+void get_broken_string(char *ch)
 {
-    char ch[100];
-    scanf("%s", ch);
     for (int i = 0; i < strlen(ch); i++)
     {
         if (i % 2 == 0)
@@ -16,4 +14,11 @@ int main()
             printf("%c", ch[i]);
         }
     }
+}
+int main()
+{
+    char ch[100];
+    scanf("%s", ch);
+    get_broken_string(&ch);
+    return 0;
 }

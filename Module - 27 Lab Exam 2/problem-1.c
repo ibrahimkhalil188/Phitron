@@ -4,21 +4,23 @@ int main()
     int n;
     scanf("%d", &n);
     int array[n];
-    int index = 0;
+    int sum = 0;
+    int count = 0;
     for (int i = 0; i < n; i++)
     {
-        if (count % 2 != 0)
+        int count_divided_three = count / 3;
+        if (count_divided_three % 2 == 0)
         {
-            for (int k = 0; k < 3; k++)
-            {
-                array[index] = index + 1;
-                index++;
-            }
+            array[i] = i + 1;
+            count++;
         }
+        else
+        {
+            array[i] = -(i + 1);
+            count++;
         }
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d\n", array[i]);
+        sum += array[i];
     }
+    printf("%d", sum);
     return 0;
 }

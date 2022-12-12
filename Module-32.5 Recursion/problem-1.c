@@ -3,7 +3,8 @@ int get_pow(int i, int n, int m)
 {
     if (i == m)
         return 1;
-    return n * get_pow(i + 1, n, m);
+    int s = get_pow(i + 1, n, m);
+    return n * s;
 }
 int main()
 {
